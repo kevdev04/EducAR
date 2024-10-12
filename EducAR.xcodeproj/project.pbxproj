@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,14 @@
 		DE326E3F2C7AF97E00B522D1 /* EducARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE326E3E2C7AF97E00B522D1 /* EducARTests.swift */; };
 		DE326E492C7AF97E00B522D1 /* EducARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE326E482C7AF97E00B522D1 /* EducARUITests.swift */; };
 		DE326E4B2C7AF97E00B522D1 /* EducARUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE326E4A2C7AF97E00B522D1 /* EducARUITestsLaunchTests.swift */; };
+		DE326E582C7B030F00B522D1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE326E572C7B030E00B522D1 /* Launch Screen.storyboard */; };
+		DE7286022C7C07F5008653C8 /* MedicineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7286012C7C07F5008653C8 /* MedicineView.swift */; };
+		DE7286042C7C19A4008653C8 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7286032C7C19A4008653C8 /* ColorExtensions.swift */; };
+		DE7286062C7C2F84008653C8 /* ArchitectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7286052C7C2F84008653C8 /* ArchitectView.swift */; };
+		DEFB9AFA2C88E5B800146199 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB9AF92C88E5B800146199 /* ARViewContainer.swift */; };
+		DEFB9B4B2C896C4400146199 /* oseo.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DEFB9B4A2C896C4400146199 /* oseo.usdz */; };
+		DEFBA3AD2C7EE0DA00641A6F /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFBA3AC2C7EE0DA00641A6F /* ARKit.framework */; };
+		DEFBA3AF2C7EE0F800641A6F /* RealityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFBA3AE2C7EE0F800641A6F /* RealityKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,15 @@
 		DE326E442C7AF97E00B522D1 /* EducARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EducARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE326E482C7AF97E00B522D1 /* EducARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducARUITests.swift; sourceTree = "<group>"; };
 		DE326E4A2C7AF97E00B522D1 /* EducARUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducARUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DE326E572C7B030E00B522D1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DE7286012C7C07F5008653C8 /* MedicineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineView.swift; sourceTree = "<group>"; };
+		DE7286032C7C19A4008653C8 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		DE7286052C7C2F84008653C8 /* ArchitectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectView.swift; sourceTree = "<group>"; };
+		DEFB9AF92C88E5B800146199 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		DEFB9B4A2C896C4400146199 /* oseo.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = oseo.usdz; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Downloads/oseo.usdz"; sourceTree = "<group>"; };
+		DEFBA3AC2C7EE0DA00641A6F /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		DEFBA3AE2C7EE0F800641A6F /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
+		DEFBA3B42C7EF1D400641A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFBA3AF2C7EE0F800641A6F /* RealityKit.framework in Frameworks */,
+				DEFBA3AD2C7EE0DA00641A6F /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +97,7 @@
 				DE326E3D2C7AF97E00B522D1 /* EducARTests */,
 				DE326E472C7AF97E00B522D1 /* EducARUITests */,
 				DE326E2B2C7AF97D00B522D1 /* Products */,
+				DEFBA3AB2C7EE0DA00641A6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +114,17 @@
 		DE326E2C2C7AF97D00B522D1 /* EducAR */ = {
 			isa = PBXGroup;
 			children = (
+				DEFBA3B42C7EF1D400641A6F /* Info.plist */,
 				DE326E2D2C7AF97D00B522D1 /* EducARApp.swift */,
 				DE326E2F2C7AF97D00B522D1 /* ContentView.swift */,
+				DE7286052C7C2F84008653C8 /* ArchitectView.swift */,
+				DE7286012C7C07F5008653C8 /* MedicineView.swift */,
+				DEFB9AF92C88E5B800146199 /* ARViewContainer.swift */,
+				DE7286032C7C19A4008653C8 /* ColorExtensions.swift */,
+				DEFB9B4A2C896C4400146199 /* oseo.usdz */,
 				DE326E312C7AF97E00B522D1 /* Assets.xcassets */,
 				DE326E332C7AF97E00B522D1 /* Preview Content */,
+				DE326E572C7B030E00B522D1 /* Launch Screen.storyboard */,
 			);
 			path = EducAR;
 			sourceTree = "<group>";
@@ -125,6 +152,15 @@
 				DE326E4A2C7AF97E00B522D1 /* EducARUITestsLaunchTests.swift */,
 			);
 			path = EducARUITests;
+			sourceTree = "<group>";
+		};
+		DEFBA3AB2C7EE0DA00641A6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEFBA3AE2C7EE0F800641A6F /* RealityKit.framework */,
+				DEFBA3AC2C7EE0DA00641A6F /* ARKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +243,7 @@
 				};
 			};
 			buildConfigurationList = DE326E252C7AF97D00B522D1 /* Build configuration list for PBXProject "EducAR" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -231,8 +267,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE326E582C7B030F00B522D1 /* Launch Screen.storyboard in Resources */,
 				DE326E352C7AF97E00B522D1 /* Preview Assets.xcassets in Resources */,
 				DE326E322C7AF97E00B522D1 /* Assets.xcassets in Resources */,
+				DEFB9B4B2C896C4400146199 /* oseo.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7286022C7C07F5008653C8 /* MedicineView.swift in Sources */,
 				DE326E302C7AF97D00B522D1 /* ContentView.swift in Sources */,
 				DE326E2E2C7AF97D00B522D1 /* EducARApp.swift in Sources */,
+				DE7286062C7C2F84008653C8 /* ArchitectView.swift in Sources */,
+				DE7286042C7C19A4008653C8 /* ColorExtensions.swift in Sources */,
+				DEFB9AFA2C88E5B800146199 /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,15 +463,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"EducAR/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "EducAR/Preview\\ Content EducAR/Assets.xcassets";
 				DEVELOPMENT_TEAM = 2CYK4KPJ3D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EducAR/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This is required to use the camera for AR functionality";
+				INFOPLIST_KEY_NSMotionUsageDescription = "needed for app functions";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This is required to store the picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,15 +499,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"EducAR/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "EducAR/Preview\\ Content EducAR/Assets.xcassets";
 				DEVELOPMENT_TEAM = 2CYK4KPJ3D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EducAR/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This is required to use the camera for AR functionality";
+				INFOPLIST_KEY_NSMotionUsageDescription = "needed for app functions";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This is required to store the picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
